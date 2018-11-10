@@ -22,7 +22,16 @@
         <form action = "{{ url_for('main_page') }}" method = get>
             <button name='clear' type="submit" class="btn btn-md btn-success">Clear</button>
         </form>
-            <h2 style = "text-align: center;">Result: {{params['res']}}</h2>
+
+        <br><br>
+        <form>
+        <input type="radio_sum" name="choice"> Summ
+        <br><br>
+        <input type="radio_razn" name="choice"> Diff
+        </form>
+        <button>Submit Answer</button> 
+        
+        <h2 style = "text-align: center;">Result: {{params['res']}}</h2>
        </div>
    </body>
 </html>
