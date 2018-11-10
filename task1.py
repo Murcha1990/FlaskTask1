@@ -8,10 +8,9 @@ def main_page():
     a, b, res = '','',''
     
     if request.method == 'POST':
-        a = request.form.get('a')     
-        b = request.form.get('b')  
+        a = float(request.form.get('a'))     
+        b = float(request.form.get('b'))  
         
-        res = -1
         if 'summa' in request.form:
             res = str(a + b)
         else:

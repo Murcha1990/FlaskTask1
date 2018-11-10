@@ -6,9 +6,9 @@
             <h2 style = "text-align: center;">Hello!</h2>
         </div>
         <form action = "{{ url_for('main_page') }}" method = post>
-            <input type="text" name="{{params['a']}}" required>
+            <input type="text" name="a" required>
             <br><br>
-            <input type="text" name="{{params['b']}}" required>
+            <input type="text" name="b" required>
             <br><br>
             <button name='summa' type="submit" class="btn btn-md btn-success">Summ</button>
             <button name='raznost' type="submit" class="btn btn-md btn-success">Diff</button>
