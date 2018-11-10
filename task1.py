@@ -15,8 +15,8 @@ def main_page():
             res = 'sum:'+str(a + b)
         elif 'raznost' in request.form:
             res = 'razn:'+str(a - b) 
-        if 'Submit Answer' in request.form:
-            elif 'radio_sum' in request.form:
+        elif 'Submit Answer' in request.form:
+            if 'radio_sum' in request.form:
                 if 'radio_razn' in request.form:
                     res = 'sum:'+str(a+b)+', razn:'+str(a-b)
                 else:
