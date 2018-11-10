@@ -13,7 +13,7 @@ def main_page():
         
         if 'summa' in request.form:
             res = str(a + b)
-        else:
+        elif 'raznost' in request.form:
             res = str(a - b) 
         
     return render_template('main_page.html',params={'a':a,'b':b,'res':res})

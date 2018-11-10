@@ -7,15 +7,20 @@
         </div>
         <form action = "{{ url_for('main_page') }}" method = post>
             <input type="text" name="a" required 
+                               value = "{{ params['a'] }}"
                                pattern="[+-]?([0-9]*[.])?[0-9]+"
                                oninvalid="alert('введите число');">
             <br><br>
             <input type="text" name="b" required 
+                               value="{{ params['b'] }}" 
                                pattern="[+-]?([0-9]*[.])?[0-9]+"
                                oninvalid="alert('введите число');">
             <br><br>
             <button name='summa' type="submit" class="btn btn-md btn-success">Summ</button>
             <button name='raznost' type="submit" class="btn btn-md btn-success">Diff</button>
+        </form>
+        <form action = "{{ url_for('main_page') }}" method = get>
+            <button name='clear' type="submit" class="btn btn-md btn-success">Clear</button>
         </form>
             <h2 style = "text-align: center;">Result: {{params['res']}}</h2>
        </div>
