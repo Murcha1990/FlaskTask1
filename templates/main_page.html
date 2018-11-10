@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+   <body>
+    <div class="container">
+        <div class="page-header">
+            <h2 style = "text-align: center;">Hello!</h2>
+        </div>
+        <form action = "{{ url_for('main_page') }}" method = post>
+            <input type="text" name="{{params['a']}}" required>
+            <br><br>
+            <input type="text" name="{{params['b']}}" required>
+            <br><br>
+            <button name='summa' type="submit" class="btn btn-md btn-success">Summ</button>
+            <button name='raznost' type="submit" class="btn btn-md btn-success">Diff</button>
+        </form>
+            <h2 style = "text-align: center;">Result: {{params['res']}}</h2>
+       </div>
+   </body>
+</html>
