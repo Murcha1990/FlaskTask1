@@ -18,19 +18,17 @@
             <br><br>
             <button name='summa' type="submit" class="btn btn-md btn-success">Summ</button>
             <button name='raznost' type="submit" class="btn btn-md btn-success">Diff</button>
-        </form>
-        
-        <form action = "{{ url_for('main_page') }}" method = get>
-            <button name='clear' type="submit" class="btn btn-md btn-success">Clear</button>
-        </form>
 
-        <form action = "{{ url_for('main_page') }}" method = post>
         <br><br>
             <input type="radio" name="radio_sum"> Summ
             <br><br>
             <input type="radio" name="radio_razn"> Diff
             <br><br>
             <button name='Submit Answer' type="submit" class="btn btn-md btn-success">Submit Answer</button>
+        </form>
+        
+        <form action = "{{ url_for('main_page') }}" method = get>
+            <button name='clear' type="submit" class="btn btn-md btn-success">Clear</button>
         </form>
         
         <h2 style = "text-align: center;">Result: {{params['res']}}</h2>
